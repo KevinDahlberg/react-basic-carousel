@@ -1,8 +1,14 @@
 .box {
   width: 100px;
   height: 100px;
+  display: inline-block;
+  margin: 10px;
 }
 
 .blue-box {
   background-color: blue;
+}
+
+.red-box {
+  background-color: red;
 }
