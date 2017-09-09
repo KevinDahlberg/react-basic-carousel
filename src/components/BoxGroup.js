@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import Box from './components/Box'
+import Box from '../components/Box'
 
 export default class BoxGroup extends Component {
 
@@ -15,12 +15,12 @@ export default class BoxGroup extends Component {
 
     return (
       <div>
-        {row.map((numOfBoxes, index) => {
-            return (
-              {this.renderBox}
-            );
-          })
-        }
+        {row.map((numOfBoxes, index) =>
+          <div key={index}>
+            {this.renderBox}
+          </div>
+        )}
+      </div>
     );
   }
 }

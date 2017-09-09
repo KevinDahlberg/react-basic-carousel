@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 
-import Box from './components/Box';
-
-const boxArray = [ Box, Box, Box, Box, Box ]
-const boxes = boxArray.map((box, index) =>
-    <Box key={index} />
-);
+import BoxGroup from './components/BoxGroup';
 
 class App extends Component {
 
@@ -36,7 +31,7 @@ class App extends Component {
 
   render() {
     return (
-      <Box boxClass={this.state.boxClass}/>
+      <BoxGroup boxClass={this.state.boxClass}/>
     );
   }
 }
