@@ -11,11 +11,11 @@ export default class BoxGroup extends Component {
   }
 
   render() {
-    const numOfBoxes = 6;
+    const numOfBoxes = [1, 2, 3, 4];
 
     return (
       <div>
-        {row.map((numOfBoxes, index) =>
+        {numOfBoxes.map((boxes, index) =>
           <div key={index}>
             {this.renderBox}
           </div>
